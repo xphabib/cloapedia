@@ -1,14 +1,16 @@
 # == Schema Information
 #
-# Table name: categories
+# Table name: comments
 #
 #  id          :integer          not null, primary key
-#  description :text
-#  image       :string
-#  name        :string
+#  description :string
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  blog_id     :integer
+#  user_id     :integer
 #
 
-class Category < ApplicationRecord
+class Comment < ApplicationRecord
+  belongs_to :user
+  belongs_to :blog
 end
