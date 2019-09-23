@@ -1,10 +1,9 @@
 /*
- *= require login/bootstrap.min
-
- *= require login/animate
- *= require login/hamburgers.min
- *= require login/select2.min
- *= require login/util
- *= require login/main
+ *= require login/bootstrap.css
+ *= require login/animate.css
+ *= require login/hamburgers.min.css
+ *= require login/select2.min.css
+ *= require login/util.css
+ *= require login/main.css
  *= require_self
 */

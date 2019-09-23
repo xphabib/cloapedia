@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'dashboard/index'
+  get 'dashboard/blog_posts'
   root 'blogs#index'
   get 'home/index'
 
@@ -9,7 +11,9 @@ Rails.application.routes.draw do
 
 
   devise_for :users, controllers: {
-      sessions: 'users/sessions'
+      sessions: 'users/sessions',
+      registrations: 'users/registrations',
+      passwords: 'users/passwords'
   }
 
   mount Ckeditor::Engine => '/ckeditor'

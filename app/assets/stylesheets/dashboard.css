@@ -1,0 +1,9 @@
+/*
+ *= require dashboard/extras.1.1.0.min
+ *= require dashboard/shards-dashboards.1.1.0.min
+ *= require_self
+*/
+
+.setting-icon {
+    top: 10px !important;
+}
