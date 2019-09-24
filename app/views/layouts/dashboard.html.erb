@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
-
+    <%= javascript_include_tag Ckeditor.cdn_url %>
     <%= javascript_include_tag 'dashboard.js', 'data-turbolinks-track': 'reload' %>
 
   </head>
@@ -28,7 +28,12 @@
         <!-- Main Sidebar -->
         <%= render 'shared/dashboard/main_sidebar' %>
         <!-- End Main Sidebar -->
-        <%= yield %>
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <!-- / .main-navbar -->
+          <%= render 'shared/dashboard/main_nav' %>
+          <%= yield %>
+          <%= render 'shared/dashboard/footer' %>
+        </main>
       </div>
     </div>
 
