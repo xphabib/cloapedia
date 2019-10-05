@@ -31,3 +31,4 @@
 
 /.generators
 /.idea/
+config/database.yml
