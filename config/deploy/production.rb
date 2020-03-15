@@ -60,3 +60,5 @@
 #     # password: "please use keys"
 #   }
 server '13.59.221.197', user: 'ubuntu', roles: %w{web app db}
+
+# ssh deployer@13.59.221.197
